@@ -1,0 +1,52 @@
+@use "../abstracts/colors" as *;
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background: #1c1e53;
+  .container {
+    .nav {
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .navigation {
+        #home {
+          color: var(--White, #fff);
+        }
+        a {
+          color: #bbbbcb;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+        }
+        a:hover {
+          color: #fff;
+          transition: 0.5s linear ease-in-out;
+        }
+        .btn {
+          width: 185px;
+          height: 60px;
+          border-radius: 41px;
+          border: 2px solid rgba(244, 246, 252, 0.2);
+          color: #fff;
+          padding: 16px 48px;
+          cursor: pointer;
+        }
+        .btn:hover {
+          border: 2px solid #bbbbcb;
+          color: #fff;
+        }
+      }
+      a:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
